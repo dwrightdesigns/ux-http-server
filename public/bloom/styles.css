@@ -1,0 +1,392 @@
+* body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+:root {
+  --theme-main: rgba(254, 156, 1, 1);
+  --theme-text: rgba(0, 0, 0, 1);
+  --theme-light: rgba(255, 255, 255, 1);
+  --theme-dark: rgba(50, 71, 0, 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+nav h1 {
+  color: var(--theme-main);
+  text-align: center;
+  font-size: 4rem;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  padding-left: 0;
+}
+nav li a:hover {
+  color: var(--theme-main);
+}
+nav li a {
+  text-decoration: none;
+  color: var(--theme-text);
+}
+
+.hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/lee-DK7msqOZ9fI-unsplash.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  color: var(--theme-light);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero h1 {
+  font-weight: 100;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  padding-top: 1rem;
+  text-transform: uppercase;
+}
+.hero h1 span {
+  font-weight: 600;
+  font-size: 3rem;
+}
+.hero h5 {
+  text-transform: uppercase;
+  font-weight: 200;
+  text-align: center;
+  line-height: 1.5rem;
+  letter-spacing: 0.4rem;
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+.hero button {
+  background-color: transparent;
+  border: 2px solid var(--theme-light);
+  padding: 0.5rem;
+  margin: auto;
+  font-size: 1rem;
+  width: 150px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.hero button a {
+  color: var(--theme-light);
+  text-decoration: none;
+}
+.hero button:hover {
+  background-color: rgba(240, 240, 240, 0.5);
+}
+
+.quote {
+  background-color: var(--theme-main);
+  height: 150px;
+  color: var(--theme-light);
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quote h3 span {
+  padding-left: 0.5rem;
+  font-weight: 100;
+}
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+.trending h2 {
+  padding-bottom: 1rem;
+}
+.trending .row {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.trending .row .__image-postcard {
+  margin-top: 2rem;
+  border-radius: 4px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/chuttersnap-Ti7zg9omwdE-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 276px;
+  width: 100%;
+  color: var(--theme-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.trending .row .__image-postcard h3 {
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+.trending .row .__image-postcard cite {
+  padding: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+.trending .row .__image-excerptcard {
+  border-radius: 4px 4px 4px 4px;
+  background-color: white;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+.trending .row .__image-excerptcard h3 {
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+}
+.trending .row .__image-excerptcard p {
+  padding-left: 1rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+.trending .row .__image-excerptcard cite {
+  padding-left: 2rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.trending .row .__image-excerptcard .card-img {
+  background-image: url(img/gaetano-cessati-CCy2UFLO1Mg-unsplash.jpg);
+  margin-top: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 4rem;
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+.trending .row .__post-noexcerpt {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  margin-top: 2rem;
+  border-radius: 4px;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.trending .row .__post-noexcerpt h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+.trending .row .__post-noexcerpt cite {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.trending .row .__post-noexcerpt .card-img1 {
+  background-image: url(img/camila-cordeiro-h5VFu4EyNjw-unsplash.jpg);
+  height: 192px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px 4px 0 0;
+}
+.trending .row .__post-noexcerpt .card-img2 {
+  background-image: url(img/tristan-gevaux-HnawKfg0u8M-unsplash.jpg);
+  height: 192px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 4px 4px 0 0;
+}
+.trending .row .__image-titlecard {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/tristan-gevaux-HnawKfg0u8M-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 330px;
+  margin-top: 2rem;
+  color: var(--theme-light);
+  letter-spacing: 0.1rem;
+  border-radius: 4px;
+  padding: 1rem;
+}
+.trending .row .__image-titlecard h3 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.trending .row aside {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.trending .row aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+.trending .row aside .__card {
+  display: flex;
+  padding: 1rem;
+}
+.trending .row aside .__card img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+.trending .row aside .__card .__card-content {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.trending .row aside .__card .__card-content cite {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  background-color: var(--theme-dark);
+  height: 10vh;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40%;
+}
+footer .contact {
+  justify-content: flex-start;
+  width: 40%;
+}
+footer .fa-facebook-f {
+  border-radius: 6px;
+  border: 2px solid white;
+  height: 24px;
+  width: 24px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+footer .fa-twitter {
+  border-radius: 6px;
+  border: 2px solid white;
+  height: 24px;
+  width: 24px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+footer .fa-pinterest-p {
+  border-radius: 6px;
+  border: 2px solid white;
+  height: 24px;
+  width: 24px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+@media screen and (min-width: 684px) {
+  nav {
+    background-color: #f2f2f2;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+  nav h1 {
+    position: absolute;
+    left: 3%;
+    padding: 1rem;
+  }
+  nav ul {
+    position: absolute;
+    right: 3%;
+    width: 30%;
+    padding: 1rem;
+  }
+  nav ul li {
+    justify-content: space-between;
+    width: 30%;
+  }
+}
+@media screen and (min-width: 832px) {
+  .hero h1 {
+    font-size: 3rem;
+    text-align: left;
+  }
+  .hero h5 {
+    font-size: 1.2em;
+    text-align: left;
+  }
+  .hero button {
+    margin: 0;
+    margin-top: 2rem;
+  }
+
+  .quote {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .trending .row {
+    flex-direction: row;
+  }
+  .trending .row .column1 {
+    padding-right: 2rem;
+    width: 50%;
+  }
+  .trending .row .column2 {
+    padding-right: 2rem;
+    width: 25%;
+  }
+  .trending .row .column3 {
+    width: 25%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
